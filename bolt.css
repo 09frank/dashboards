@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');:root {
+    --bg-color: rgb(255, 148, 148);
+
+    --bg-white: #fff;
+
+    --bg-green: #48A08A;
+
+    --bg-blue: #4B52FF;
+
+    --bg-purpple: #AB53DB;
+
+    --bg-red: #FF5C59;
+
+    --bg-menu: #EEFBF2;
+
+    --text-primary: #4e4e4e;
+
+    --text-primary-light: #75757592;
+
+    --text-blue: #306ef5;
+
+    --text-success: #48A08A;
+
+    --bg-success: #DEF1EF;
+
+    --text-danger: #E85048;
+
+    --bg-danger: #FBE0DF;
+
+    --icon-color: #DEDEDE;
+
+    --bg-button-yellow: #f6c062;
+
+    --text-white: #fff;
+
+    --border-radius1: 1.2rem;
+
+    --tr-padding: 1rem;
+
+
+}
+
+h1 {
+    font-size:4.3rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size:3.7rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size:2.5rem;
+    font-weight: 600;
+}
+
+
+h4 {
+    font-size:1.3rem;
+    font-weight: 300;
+}
+
+h5 {
+    font-size:1rem;
+    font-weight: 200;
+}
+
+html { 
+    font-size: 50.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}   
+
+body {
+    height: 100%;
+}
+
+
+.container {
+    	background: var(--bg-color);
+        width: 100vw;
+        height: 200vw;
+        display: flex;
+}
+/*linha 16 html----------------------------------------------------------------------------------------------*/
+.barlat {
+    background: var(--bg-white);
+    width: 33rem;
+    height: 100%;
+}
+
+.container .barlat .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.container .barlat .logo img {
+    margin: 2rem 2rem;
+    width: 12rem;
+    height: 5rem;
+}
+.container .barlat  .logo i {
+    color: var(--text-primary);
+    font-size: 3rem;
+}
+.container .barlat .avatar {
+    position: align center;
+    padding-left: 7rem;
+
+}
+
+.container .barlat .avatar img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+
+.container .barlat .info-avatar h3 {
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    padding-left:7rem;
+
+}
+
+.container .barlat .info-avatar h5 {
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+    font-weight: 300;
+    color: var(--text-primary-light);
+    padding-left: 3rem;
+}
+nav .menu {
+    display: flex;    
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+
+nav .menu li {
+    width: 100%;
+    line-height: 6rem;
+    padding-left: 4.7rem;
+    transition: 0.5s;
+}
+
+nav .menu li:hover {
+    background: var(--bg-menu);
+    color: var(--text-blue);
+    
+}
+
+nav .menu li:hover a i {
+    color: var(--text-blue);
+}
+nav .menu li a i {
+    color: var(--icon-color);
+    font-size: 2.5rem;
+}
+
+nav .menu li:hover a span {
+    color: var(--text-blue);
+}
+
+nav .menu li a{
+    display: flex;
+    align-items: center;
+}
+nav .menu li a span {
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 1.2rem;
+}
+/* topo linha 95 html --------------------------------------------------------------------------------------*/
+.topo {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0rem;
+    background: rgb(247, 247, 247);
+
+}
+
+
+.content .topo .pesquisa {
+    display: flex;
+    width:45rem;
+    background: rgb(217, 216, 216);
+    height: 50%;
+    border-radius: var(--border-radius1);
+    justify-content: center;
+    padding-left: 2rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.content .topo .pesquisa input {
+    width: 90%;
+    height: 5rem;
+    background: transparent;
+    font-size: 1.4rem;
+    color:rgb(97, 97, 97)
+}
+
+.content .topo .pesquisa i{
+    font-size: 2rem;
+}
+
+.topo .selec{
+    display: flex;    
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    font-size: 2rem;
+
+}
+
+
+
+.content .topo .notificacao {
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content .topo .notificacao .not1, .content .notificacao .not2, .content .notificacao .not3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content .topo .notificacao .not1 .notefloat1, .content .notificacao .not2 .notefloat2, .content .notificacao .not3 .notefloat3 {
+    position: absolute;
+    width: 2.3rem;
+    height: 2.3rem;
+    color: var(--text-white);
+    border-radius: 50%;
+    text-align: center;
+    top: -1rem;
+    right: -1rem;
+    padding-top: 0.3rem;
+
+}
+
+.content .topo .notificacao .not1, .content .notificacao .not2, .content .notificacao .not3 {
+    border: 1px solid rgb(186, 186, 186);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.7rem;
+    display: flex;
+}
+
+.content .topo .notificacao .not1 .notefloat1 {
+    background: var(--bg-button-yellow);
+}
+.content .topo .notificacao .not2 .notefloat2 {
+    background: var(--bg-green);
+}
+.content .notificacao .not3 .notefloat3 {
+    background: var(--bg-red);
+}
+
+.content .topo .notificacao .not1 i, .content .notificacao .not2 i, .content .notificacao .not3 i {
+    font-size: 2rem;
+    color: rgb(34, 34, 34);
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+.cabecalho {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    background: rgb(217, 216, 216);
+}
+.cabecalho .botlad .botao {
+    padding: 2rem;
+    background: var(--bg-button-yellow);
+    color: var(--text-white);
+    border-radius: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.content {
+    margin: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* Content section */
+
+
+.boxIcons {
+    /* background:rgb(250, 235, 193); */
+    height: 30rem;
+    display: flex;
+    gap: 3.5rem;
+    
+}
+
+
+.content-middle {
+    background:rgb(194, 233, 175);
+    height: 10rem;
+}
+
+
+
